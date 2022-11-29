@@ -1,0 +1,81 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "dbprueba070922";
+
+// Creando la conexion
+$conn = new mysqli($servername, $username, $password,$dbname);
+
+// Verificando la conexion
+if ($conn->connect_error) {
+  die("Falló la conexión: " . $conn->connect_error);
+}
+echo "Conexión correcta";
+
+
+// SQL para crear las tablas
+
+$sql = "CREATE TABLE persona(
+    id_persona INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(12),
+    apellidoP VARCHAR(12),
+    apellidoM VARCHAR(12),
+    ci INT(10) NOT NULL
+)";
+
+$sql = "CREATE TABLE cargo(
+    id_cargo INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    cargo VARCHAR(12),
+    sueldo NUMERIC(8),
+    id_persona INT(6),
+    id_area INT(6)
+    )";
+    
+ $sql ="CREATE TABLE area(
+     id_area INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+     area VARCHAR(12)
+     )"; 
+     
+$sql ="CREATE TABLE comisiones(
+    id_comision INT(6) UNSIGNED AUTO_INCREMENT PRIMARY key,
+    monto NUMERIC(10),
+    concepto VARCHAR(40),
+    fecha_comosion DATE (10),
+    id_persona INT(6)
+    )";
+    
+$sql ="CREATE TABLE destino(
+    id_destino INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    destino VARCHAR(20),
+    fecha_llegada DATE(10),
+    fecha_salida DATE(10),
+    id_persona INT(6)
+    )";
+    
+    
+    //SQL insertar datos
+    
+$sql = "INSERT INTO persona( nombre,apellidoP, apellidoM, ci)
+VALUES ('Juancito','Pinto','paredes',12345678)";
+
+$sql ="INSERT INTO cargo(cargo, sueldo)
+VALUES('gerente',8450)";
+
+$sql ="INSERT INTO area(area) 
+VALUES('gerencia')";
+
+$sql ="INSERT INTO comisiones(monto, concepto, fecha_comosion)
+VALUES(0,'el gerente no resive comision',12-03-2020)";
+
+$sql ="INSERT INTO destino(destino, fecha_llegada,fecha_salida)
+VALUES(gerencia,12-03-2019,12-03-2021)";
+
+if ($conn->query($sql) === TRUE) {
+  echo "Tabla creada correctamente";
+} else {
+  echo "Error al crear la tabla: " . $conn->error;
+}
+
+$conn->close();
+?>

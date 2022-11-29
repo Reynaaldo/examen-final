@@ -1,0 +1,69 @@
+/*
+*La clase estilo1 realiza ..
+? Como se podria colocar un borde
+! No funciona en opera 3
+todo Falta 2 clases para las tablas
+*/
+body{
+  width: 100%;
+  height: 110%;
+  background-image: url(/img/fondo4.jpeg);
+}
+
+.tabla1{
+  background-color: green; 
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  width: 180px;
+  height: 90px;
+  font-family: 'Courier New', Courier, monospace;
+  position: center;
+}
+
+.tabla2{
+  background-color: yellowgreen; 
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  width: 180px;
+  height: 90px;
+  font-family: 'Courier New', Courier, monospace;
+  position: center;
+}
+
+
+.tabla3{
+  background-color: salmon; 
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  width: 180px;
+  height: 90px;
+  font-family: 'Courier New', Courier, monospace;
+  position: center;
+}
+
+
+.titulo{
+  background-color: none;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center; 
+  position: center;
+  color: coral;
+   }
+ 
+p{
+   color: white;
+   font-size: 23px;
+ }

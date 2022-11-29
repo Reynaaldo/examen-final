@@ -1,0 +1,50 @@
+button {
+    font-family: 'Times New Roman';
+    color: #000000;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: #580000;
+    margin: 15px 15px;
+    border-radius: 10px 10px;
+    background-color: #08ceff;
+    
+}
+
+
+.menu {
+    overflow: hidden;
+    position: fixed;
+    font-family: Helvetica;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #06373d;
+}
+
+.menu a {
+    font-family: helvetica;
+    font-size:  large;
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background: #14ecec;
+    color: black;
+    border: 6px solid #000000;
+    font-weight: 900;
+}
+
+
+h2 {
+    color: rgb(250, 250, 250);
+}

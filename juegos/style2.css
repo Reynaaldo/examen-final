@@ -1,0 +1,83 @@
+
+.titulo{
+  background-color: none;
+    font-size: 12pt;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 15pt;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.tarjeta{
+  width: 123px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.etiqueta{
+  background-color: none;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+}
+.contenedor{
+  font-size: 15pt;
+  background-color: none;
+  color: black;
+  
+}
+
+button{
+  background-color: olivedrab; 
+  padding: 15px 32px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  font-size: 20pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+.tarjeta1{
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  
+}
+.etiqueta1{
+  background-color: silver;
+  color: darkblue;
+  padding: 10px;
+  font-size: 40pt;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+  
+}
+.contenedor1{
+  background-color: coral;
+  color: darkred;
+  font-size:26pt;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.principal{
+  background-color: red; 
+  padding: 15px 32px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 83%;
+  margin: auto;
+  font-size: 20pt;
+    font-family: 'Courier New', Courier, monospace;
+  
+}
